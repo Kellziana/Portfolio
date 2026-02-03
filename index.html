@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samina Arshad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header class="hero">
+        <h1 class="glow-text" id="typed-text"></h1>
+        <p class="subtitle">Fullstack Developer</p>
+    </header>
+
+    <section class="cards">
+        <div class="card" data-tilt onclick="scrollToSection('about')">
+            <h2>Who am I</h2>
+            <p>Years of hands-on work in design and development.</p>
+        </div>
+        <div class="card" data-tilt onclick="scrollToSection('projects')">
+            <h2>Projects</h2>
+            <p>A cool description of something awesome you built.</p>
+        </div>
+    </section>
+
+    <div class="about-stack-wrapper">
+        <section id="about" class="info-section">
+            <h2 id="about-heading">Who am I?</h2>
+
+            <div class="about-content">
+                <p>
+                    I’m a software developer with a computer science bachelors degree from UCC with a passion for
+                    crafting digital experiences that are functional. I have experience in full-stack development
+                    working with a broad tech stack. I also love working at the intersection
+                    of design and technology, bringing ideas to life through clean code, thoughtful UI/UX, and a strong
+                    eye for detail.
+                </p>
+                <img src="./assets/laptop.svg" alt="laptop-image" class="laptop-image" />
+        </section>
+        <section id="stack" class="info-section">
+
+            <div class="tech-stack">
+                <button class="tech-toggle">
+                    Tech Stack <span class="arrow">▾</span>
+                </button>
+
+                <img src="./assets/stack.svg" alt="stack-image" class="stack-image" />
+
+                <div class="skills-container">
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Next.js</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Tailwind</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Linux</span>
+                        <div class="bar">
+                            <div class="fill" style="--percent: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    </section>
+    </div>
+
+
+
+    <section id="projects" class="info-section">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Boole Raider</h3>
+                <p>Motion Control platformer game</p>
+                <div class="tech-icons">Python • Pygame </div>
+                <button class="angled-button view-project-btn" data-title="Boole Raider" data-video="./assets/boole.gif"
+                    data-desc="Boole Raider is a 2D platformer game, consiting of levels. Players move and gesture their way through levels using a Kinect which allows the character to behave based on the users motion, while AI powers the world around them—GPT-3 crafts dynamic text, and DALL·E generates vivid visuals."
+                    data-stack="Python, Pygame"
+                    data-how="The project is developed as a modular platformer game using Python and Pygame, following a Model-View-Controller architecture to separate game logic, rendering, and input. Game objects, physics, and player/enemy behaviors are implemented in a hardware-agnostic model, while the view handles rendering, including hand-drawn assets and AI-generated backgrounds.
+                    The game supports both keyboard and Kinect motion controls, with gestures interpreted using motion-smoothing and depth analysis. Shared memory dictionaries enables real-time communication between processes for smooth performance.
+                    The development of this project is collaborative, using Git/GitHub with branch protections, automated CI workflows, linting, formatting, unit testing, and auto-generated documentation to ensure code quality and maintainability."
+                    data-github="https://github.com/Kellziana/semester2project">
+                    View Project
+                </button>
+            </div>
+
+            <div class="project-card">
+                <h3>Genie Getaways</h3>
+                <p>A gamified travel guide website.</p>
+                <div class="tech-icons">Next.JS • Python • Tailwind • Firebase</div>
+                <button class="angled-button view-project-btn" data-title="Genie Getaways"
+                    data-video="./assets/genie.gif"
+                    data-desc="A gamified travel guide website including a quiz which harnesses AI to suggest best fitting destinations for users using their responses and interactions with the website."
+                    data-stack="Next.JS, Python, HTML, Tailwind, Firebase"
+                    data-how="This project combines modern web technologies with AI and recommender systems to deliver tailored travel suggestions based on user preferences and behavior.
+                    The frontend is built using Next.js and Tailwind CSS to create a fast, responsive, and visually engaging user experience. Next.js is chosen for its efficient routing, performance optimizations and support for server-side rendering which improves load times and scalability. Tailwind CSS enabled rapid UI development with consistent styling, while SVG-based visuals and gamified elements helped create a playful, approachable interface that encourages user interaction.
+                    The backend is implemented using Flask (Python) due to its lightweight nature and flexibility. Flask allowed for clear separation of concerns between frontend presentation and backend logic, making it easier to manage API requests, authentication, and recommendation workflows. Firebase is selected as the database solution because it provides real-time data handling, secure user authentication, and seamless integration with web applications, reducing backend complexity while ensuring scalability.
+                    AI plays a central role in the system. The OpenAI API is used to generate the initial set of destination recommendations based on quiz responses enabling more nuanced and human-like suggestions than traditional rule-based systems. To complement this a secondary recommender system was implemented using cosine similarity, which analyzes user ratings and saved destinations to provide additional personalized recommendations beyond the initial quiz. This hybrid approach combines AI-driven creativity with data-driven personalization."
+                    data-github="https://github.com/Kellziana/GenieGetaways">
+                    View Project
+                </button>
+            </div>
+
+            <div class="project-card">
+                <h3>Palette Lab</h3>
+                <p>Colour scheme generator based on theme</p>
+                <div class="tech-icons">React • Tailwind • Next.JS</div>
+                <button class="angled-button view-project-btn" data-title="Palette Lab"
+                    data-video="./assets/palette.gif"
+                    data-desc="PaletteLab is a practical and intuitive tool for designers and developers to generate, explore, and export color palettes efficiently. It gives users the opportunity to generate mutliple colour scheme palettes based on the theme they input, which they can then save or copy and use in their projects (e.g. websites, room decor, graphic design, etc)."
+                    data-stack="React, Next.JS, Tailwind"
+                    data-how="This project is built using Next.js and React to take advantage of component-based architecture and efficient routing. Next.js is chosen for its performance optimizations making it ideal for a responsive, single-page style experience. React components, such as PaletteCard, are used to modularize the UI, allowing palettes, actions, and feedback to be easily reused and extended.
+                Palette generation is powered by the OpenAI API, where carefully engineered prompts are sent based on the user’s selected theme. These prompts are designed to return color palettes that align with UI/UX design principles, ensuring practical and visually balanced results. Once received, the response is structured into palette objects that can be easily rendered and manipulated within the interface.
+                Tailwind CSS is used for styling to enable rapid development and consistent design without the overhead of custom CSS files. Its utility-first approach made it easier to iterate on layouts, spacing, and responsiveness while maintaining a clean visual aesthetic.
+                User interaction and feedback were key considerations. React Hot Toast provides instant visual confirmation for actions such as copying colors or exporting palettes, reinforcing usability through clear feedback. For exporting palettes, HTML2Canvas is used to convert rendered palette components into downloadable PNG files, allowing users to easily share or reuse palettes outside the application"
+                    data-github="https://github.com/Kellziana/PaletteLab">
+                    View Project
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p> 2025 Samina Arshad</p>
+            <div class="social-icons">
+                <a href="https://github.com/Kellziana" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/samina-arshad-753514202/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&to=samina.arshad2003@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+
+            </div>
+
+            <div class="bubbles">
+                <img src="./assets/white.svg" alt="msg" class="bubble bubble-1">
+                <img src="./assets/white.svg" alt="msg" class="bubble bubble-2">
+                <img src="./assets/mint.svg" alt="msg" class="bubble bubble-4">
+                <img src="./assets/mint.svg" alt="msg" class="bubble bubble-5">
+                <img src="./assets/white.svg" alt="msg" class="bubble bubble-6">
+                <img src="./assets/mint.svg" alt="msg" class="bubble bubble-7">
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">
+        ↑
+    </button>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body">
+                <div class="modal-media" id="modalMedia"></div>
+                <div class="modal-info">
+                    <p><strong>Tech Stack:</strong> <span id="modalStack"></span></p>
+                    <p><strong>Description:</strong> <span id="modalDesc"></span></p>
+                    <div class="modal-links">
+                        <a id="modalGitHub" href="#" target="_blank">GitHub</a>
+                    </div>
+                    <div class="modal-details">
+                        <h4>How it was made</h4>
+                        <p id="modalHow"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
