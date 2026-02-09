@@ -92,6 +92,18 @@ body {
     animation: pulse-glow 2s infinite ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .glow-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-text {
+    font-size: 2rem;
+  }
+}
+
 .info-section {
     max-width: 800px;
     margin: 100px auto;
